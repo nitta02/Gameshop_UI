@@ -68,15 +68,17 @@ List<Game> games2 = [
     "Rockstar Games",
   ),
   Game(
-    "The Last of Us Part II",
-    GameImage("https://mvpo.us/img/P6253.jpg", ""),
+    "Brawl Stars",
+    GameImage(
+        "https://www.charlieintel.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.charlieintel.com/wp-content/uploads/2023/02/best-multiplayer-mobile-games-brawl-stars-1024x576.jpg",
+        ""),
     "",
     "Naughty Dog",
   ),
   Game(
-    "Sekiro: Shadows Die Twice",
+    "Subway Surfer",
     GameImage(
-        "https://onlysp.escapistmagazine.com/wp-content/uploads/2019/03/Sekiro-Shadows-Die-Twice-logo-art.jpg",
+        "https://1.bp.blogspot.com/-HRKDqJds_Qo/V4Z0Cvn2qdI/AAAAAAAADFM/2lrmREtsCPY3NpWIeoZIZowbHGsHYKzRwCEw/s1600/Subway%2BSurfers%2Bv1.58.0%2Blogo.jpg",
         ""),
     "",
     "From Software",

@@ -1,4 +1,3 @@
-
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
@@ -98,21 +97,28 @@ class _HomeScreenState extends State<HomeScreen> {
             height: customHeight * 0.25,
           ),
           fetaureInfos(),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              vertical: customHeight * 0.008,
-            ),
-            child: ScrollGames(
-              customHeight: customHeight * 0.5,
-              customWidth: customWidth,
-              showTitle: true,
-              list: games,
+          ScrollGames(
+            customHeight: customHeight * 0.5,
+            customWidth: customWidth,
+            showTitle: true,
+            list: games,
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
+            height: customHeight * 0.50,
+            width: customWidth,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(05),
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(featuredGames[2].coverImage.url)),
             ),
           ),
           Container(
             margin: const EdgeInsets.all(10),
             padding: const EdgeInsets.all(10),
-            height: customHeight * 0.15,
+            height: customHeight * 0.30,
             width: customWidth,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(05),
@@ -121,16 +127,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: NetworkImage(featuredGames[1].coverImage.url)),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              vertical: customHeight * 0.008,
-            ),
-            child: ScrollGames(
-              customHeight: customHeight * 0.5,
-              customWidth: customWidth,
-              showTitle: true,
-              list: games2,
-            ),
+          ScrollGames(
+            customHeight: customHeight * 0.5,
+            customWidth: customWidth,
+            showTitle: true,
+            list: games2,
           )
         ],
       ),

@@ -35,7 +35,7 @@ class ScrollGames extends StatelessWidget {
               left: customWidth * 0.005,
             ),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -47,6 +47,9 @@ class ScrollGames extends StatelessWidget {
                     fit: BoxFit.cover,
                     image: NetworkImage(e.coverImage.url),
                   )),
+                ),
+                const SizedBox(
+                  height: 15,
                 ),
                 Text(
                   e.title,
